@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "fruits")
-public class Fruit {
+@Table(name = "users")
+public class User {
 
     // @Id
     // Визначає первинний ключ об'єкта.
@@ -22,18 +22,18 @@ public class Fruit {
     // повинні призначатися, використовуючи стовпець ідентифікації БД.
     // Вони автоматично збільшуються.
     //
-    // @Column (name = "id")
+    // @Column (firstName = "id")
     // Вказує зіставлення стовпців в БД.
-    // Атрибут name використовується для вказівки імені стовпця таблиці.
+    // Атрибут firstName використовується для вказівки імені стовпця таблиці.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "name")
-    private String name;
-    @Column(name = "description")
-    private String description;
-    @Column(name = "price")
-    private double price;
+    @Column(name = "first_name")
+    private String firstName;
+    @Column(name = "last_name")
+    private String lastName;
+    @Column(name = "email")
+    private String email;
 
 }
