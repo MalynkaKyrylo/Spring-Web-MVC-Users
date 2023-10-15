@@ -29,18 +29,34 @@ CREATE DATABASE demo_db;
 -- Для цього більше підходить DECIMAL (M, 2).
 -- Однак, може не форматувати подання даних у HTML.
 
-CREATE TABLE IF NOT EXISTS fruits
+CREATE TABLE IF NOT EXISTS users
 ( id INTEGER NOT NULL AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  description VARCHAR(255) NOT NULL,
-  price DECIMAL(6,2) NOT NULL,
+  first_name VARCHAR(128) NOT NULL,
+  last_name VARCHAR(128) NOT NULL,
+  email VARCHAR(128) NOT NULL,
   PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS vegetables
-( id INTEGER NOT NULL AUTO_INCREMENT,
-  name VARCHAR(255) NOT NULL,
-  description VARCHAR(255) NOT NULL,
-  price DECIMAL(6,2) NOT NULL,
-  PRIMARY KEY (id)
-);
+-- HQL
+INSERT INTO User (first_name, last_name,  email) VALUES (:first_name, :last_name, :phone, :email)
+-- SQL
+INSERT INTO users (first_name, last_name,  email) VALUES (::first_name, :last_name, :phone, :email)
+
+
+-- HQL
+FROM User
+-- SQL
+SELECT * FROM users
+
+-- TO FIX:
+-- HQL
+UPDATE User SET email = :email WHERE id = :id
+-- SQL
+UPDATE users SET email = :email WHERE id = :id
+
+
+-- HQL
+DELETE FROM User WHERE id = :id
+-- SQL
+DELETE FROM users WHERE id = :id;
+
