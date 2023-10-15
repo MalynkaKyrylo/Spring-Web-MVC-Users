@@ -1,8 +1,8 @@
 package org.example.app.service;
 
 import jakarta.transaction.Transactional;
-import org.example.app.entity.Fruit;
-import org.example.app.repository.FruitRepository;
+import org.example.app.entity.User;
+import org.example.app.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,26 +13,26 @@ import java.util.List;
 // @Transactional застосовується до сервісного шару
 // для підтримки транзакцій.
 @Service
-public class FruitServiceImpl implements FruitService {
+public class UserServiceImpl implements UserService {
 
     @Autowired
-    FruitRepository repository;
+    UserRepository repository;
 
     @Override
     @Transactional
-    public void save(Fruit fruit) {
-        repository.save(fruit);
+    public void save(User user) {
+        repository.save(user);
     }
 
     @Override
     @Transactional
-    public List<Fruit> fetchAll() {
+    public List<User> fetchAll() {
         return repository.fetchAll();
     }
 
     @Override
     @Transactional
-    public Fruit fetchById(Long id) {
+    public User fetchById(Long id) {
         return repository.fetchById(id);
     }
 
