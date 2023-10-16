@@ -21,7 +21,7 @@ public class UserController {
     private UserService service;
 
     @RequestMapping("/users")
-    public String viewFruits(Model model) {
+    public String viewUsers(Model model) {
         List<User> users = service.fetchAll();
         model.addAttribute("title", "Users");
         model.addAttribute("user", users);
@@ -29,7 +29,7 @@ public class UserController {
     }
 
     @RequestMapping("/add-user")
-    public String addFruit(Model model) {
+    public String addUser(Model model) {
         model.addAttribute("title", "Add User");
         return "user_add";
     }
