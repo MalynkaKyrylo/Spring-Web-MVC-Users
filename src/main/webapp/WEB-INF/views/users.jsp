@@ -13,31 +13,31 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container text-left mb-3">
-				    <p class="fs-2" style="color: #a72090;">Fruits
-				    <a href="add-fruit" class="btn btn-primary btn-sm ms-2"><i class="bi bi-plus-lg"></i>Add</a>
+				    <p class="fs-2" style="color: #a72090;">Users
+				    <a href="add-user" class="btn btn-primary btn-sm ms-2"><i class="bi bi-plus-lg"></i>Add</a>
 				    </p>
                 </div>
 				<table class="table">
 					<thead class="table-light">
 						<tr>
 							<th scope="col">No.</th>
-							<th scope="col">Name</th>
-							<th scope="col">Description</th>
-							<th scope="col">Price, &#x00A3;</th> <!-- <- &#x00A3; HTML GBP -->
+							<th scope="col">First Name</th>
+							<th scope="col">Last Name</th>
+							<th scope="col">Email, &#x00A3;</th> <!-- <- &#x00A3; HTML GBP -->
 							<th scope="col">Action</th>
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach items="${fruit}" var="frt">
+						<c:forEach items="${user}" var="user">
 							<tr>
-								<th scope="row">${frt.id}</th>
-								<td>${frt.name}</td>
-								<td>${frt.description}</td>
-								<td class="font-weight-bold text-end pe-5">${frt.price}</td>
+								<th scope="row">${user.id}</th>
+								<td>${user.first_name}</td>
+								<td>${user.last_name}</td>
+								<td class="font-weight-bold text-end pe-5">${user.email}</td>
 								<td>
-								<a class="btn btn-warning btn-sm" href="update-fruit/${frt.id}" role="button">Update</a>
+								<a class="btn btn-warning btn-sm" href="update-user/${user.id}" role="button">Update</a>
 								&nbsp;&nbsp;
-								<a class="btn btn-danger btn-sm" href="delete-fruit/${frt.id}" role="button">Delete</a>
+								<a class="btn btn-danger btn-sm" href="delete-user/${user.id}" role="button">Delete</a>
 								</td>
 							</tr>
 						</c:forEach>
