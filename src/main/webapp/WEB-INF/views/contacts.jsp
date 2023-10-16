@@ -14,15 +14,15 @@
             <div class="row">
                 <div class="col">
                     <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1218.1173767622718!2d4.909149440844725!3d52.36616320855341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609a27fa26627%3A0xf500bb675cbdfe40!2zUGxhbnRhZ2UgS2Vya2xhYW4gMTVIUywgMTAxOCBTWiBBbXN0ZXJkYW0sINCd0LjQtNC10YDQu9Cw0L3QtNGL!5e0!3m2!1sru!2sua!4v1696850591870!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d545.1611871619735!2d30.74767841672769!3d46.47959788965105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c6319f49eaaaab%3A0xa6467105eed9b98c!2sHillel%20IT%20School!5e0!3m2!1suk!2sua!4v1697478219551!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col">
                     <p class="text-start" style="font-size: 18px">
-                        Address: Bright St. 12, MainCity, 00125<br>
-                        <i class="bi bi-telephone-fill"></i> Phone: +555 123-4587<br>
-                        <i class="bi bi-envelope"></i> E-mail: shop@mail.com<br>
-                        MY SHOP, LLC
+                        Address: Kanatna Str. 22, Odesa, Ukraine, 65000<br>
+                        <i class="bi bi-telephone-fill"></i> Phone: +380(97) 156-58-27<br>
+                        <i class="bi bi-envelope"></i> E-mail: odesa@ithillel.ua<br>
+                        Hillel IT School
                     </p>
                 </div>
             </div>
