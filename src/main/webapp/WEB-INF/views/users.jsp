@@ -23,21 +23,21 @@
 							<th scope="col">No.</th>
 							<th scope="col">First Name</th>
 							<th scope="col">Last Name</th>
-							<th scope="col">Email, &#x00A3;</th> <!-- <- &#x00A3; HTML GBP -->
+							<th scope="col">Email</th>
 							<th scope="col">Action</th>
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach items="${user}" var="user">
+						<c:forEach items="${user}" var="usr">
 							<tr>
-								<th scope="row">${user.id}</th>
-								<td>${user.first_name}</td>
-								<td>${user.last_name}</td>
-								<td class="font-weight-bold text-end pe-5">${user.email}</td>
+								<th scope="row">${usr.id}</th>
+								<td>${usr.first_name}</td>
+								<td>${usr.last_name}</td>
+								<td>${usr.email}</td>
 								<td>
-								<a class="btn btn-warning btn-sm" href="update-user/${user.id}" role="button">Update</a>
+								<a class="btn btn-warning btn-sm" href="update-user/${usr.id}" role="button">Update</a>
 								&nbsp;&nbsp;
-								<a class="btn btn-danger btn-sm" href="delete-user/${user.id}" role="button">Delete</a>
+								<a class="btn btn-danger btn-sm" href="delete-user/${usr.id}" role="button">Delete</a>
 								</td>
 							</tr>
 						</c:forEach>

@@ -25,7 +25,7 @@
 					<div>
 						<label for="last_name"><span style="font-size:12px;">Last Name</span></label>
 						<input type="text" class="form-control" name="last_name" id="last_name"
-							placeholder="Last name..." >${user.last_name}</textarea>
+							placeholder="Last name..." value="${user.last_name}">
 					</div>
 					<div>
 						<label for="email"><span style="font-size:12px;">Email</span></label>
@@ -42,6 +42,6 @@
 		</div>
 	</div>
 </div>
-<script src="<c:url value="/resources/js/script-maskMoney.js" />"></script>
+
 </body>
 </html>
