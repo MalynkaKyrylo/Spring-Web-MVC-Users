@@ -18,20 +18,18 @@
                     <input type="hidden" value="${user.id}" name="id" class="form-control">
                    </div> 
 					<div>
-						<label for="first_name"><span style="font-size:12px;">First Name</span></label>
-						<input type="text"	class="form-control" id="first_name" name="first_name"
-							placeholder="First Name..." value="${user.first_name}">
+						<label for="firstName"><span style="font-size:12px;">First Name</span></label>
+						<input type="text"	class="form-control" id="firstName" name="firstName"
+							placeholder="First Name..." value="${user.firstName}">
 					</div>
 					<div>
-						<label for="last_name"><span style="font-size:12px;">Last Name</span></label>
-						<input type="text" class="form-control" name="last_name" id="last_name"
-							placeholder="Last name..." value="${user.last_name}">
+						<label for="lastName"><span style="font-size:12px;">Last Name</span></label>
+						<input type="text" class="form-control" name="lastName" id="lastName"
+							placeholder="Last name..." value="${user.lastName}">
 					</div>
 					<div>
 						<label for="email"><span style="font-size:12px;">Email</span></label>
-						<input type="email"	pattern="^([a-z0-9_.-]+)@([a-z0-9.-]+)\.([a-z]{2,4})$"
-						onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9_.-]/g, '');"
-						class="form-control" id="email" name="email"
+						<input type="text"	class="form-control" id="email" name="email"
 							placeholder="name@mail.com" value="${user.email}">
 					</div>
 					<div class="container text-left"><br>

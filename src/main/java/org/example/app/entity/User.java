@@ -22,16 +22,16 @@ public class User {
     // повинні призначатися, використовуючи стовпець ідентифікації БД.
     // Вони автоматично збільшуються.
     //
-    // @Column (firstName = "id")
+    // @Column (name = "id")
     // Вказує зіставлення стовпців в БД.
     // Атрибут firstName використовується для вказівки імені стовпця таблиці.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-    @Column(name = "first_name")
+    @Column(name = "firstName")
     private String firstName;
-    @Column(name = "last_name")
+    @Column(name = "lastName")
     private String lastName;
     @Column(name = "email")
     private String email;

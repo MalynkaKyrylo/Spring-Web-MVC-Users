@@ -15,21 +15,18 @@
 				<!-- form -->
 				<form action="handle-user" method="post">
 					<div>
-						<label for="first_name"><span style="font-size:12px;">First Name</span></label>
-						<input type="text" class="form-control fw-light" id="first_name" name="first_name"
+						<label for="firstName"><span style="font-size:12px;">First Name</span></label>
+						<input type="text" class="form-control fw-light" id="firstName" name="firstName"
 							placeholder="First Name...">
 					</div>
 					<div>
-						<label for="last_name"><span style="font-size:12px;">Last Name</span></label>
-						<input type="text" class="form-control fw-light" id="last_name" name="last_name"
+						<label for="lastName"><span style="font-size:12px;">Last Name</span></label>
+						<input type="text" class="form-control fw-light" id="lastName" name="lastName"
 			                placeholder="Last name...">
 					</div>
 					<div>
 						<label for="email"><span style="font-size:12px;">Email</span></label>
-						<input type="email" class="form-control fw-light"
-						pattern="^([a-z0-9_.-]+)@([a-z0-9.-]+)\.([a-z]{2,4})$"
-						onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9_.-]/g, '');"
-						id="email" name="email"
+						<input type="text" class="form-control fw-light" id="email" name="email"
 							placeholder="name@mail.com">
 					</div>
 					<div class="container text-left"><br>
