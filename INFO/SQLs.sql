@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS users
   PRIMARY KEY (id)
 );
 
-INSERT INTO users (firstName, lastName,  email) VALUES (:firstName, :lastName, :email)
+INSERT INTO users (first_name, last_name,  email) VALUES (:first_name, :last_name, :email)
 
 SELECT * FROM users
 
