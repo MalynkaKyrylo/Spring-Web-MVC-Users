@@ -6,9 +6,9 @@
 <head>
 <%@include file="./fragments/head.jsp"%>
 </head>
-<body style="background-color: #E9ECEB;">
+<body style="background-color: #b8d1fa;">
 <%@include file="./fragments/menu.jsp"%>
-<div class="container m-2" style="background-color: #FCFCFC;">
+<div class="container m-2" style="background-color: #ffecec;">
 	<div class="container-sm align-items-center justify-content-center">
         <div class="container text-center p-2">
           <div class="row">

@@ -6,14 +6,14 @@
 <head>
 <%@include file="./fragments/head.jsp"%>
 </head>
-<body style="background-color: #E9ECEB;">
+<body style="background-color: #9cf7d8;">
 <%@include file="./fragments/menu.jsp"%>
-<div class="container m-2" style="background-color: #FCFCFC;">
+<div class="container m-2" style="background-color: #ffecec;">
 	<div class="container-sm">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="container text-left mb-3">
-				    <p class="fs-2" style="color: #a72090;">Users
+				    <p class="fs-2" style="color: #aa17fb;">Users
 				    <a href="add-user" class="btn btn-primary btn-sm ms-2"><i class="bi bi-plus-lg"></i>Add</a>
 				    </p>
                 </div>
@@ -31,8 +31,8 @@
 						<c:forEach items="${user}" var="usr">
 							<tr>
 								<th scope="row">${usr.id}</th>
-								<td>${usr.first_name}</td>
-								<td>${usr.last_name}</td>
+								<td>${usr.firstName}</td>
+								<td>${usr.lastName}</td>
 								<td>${usr.email}</td>
 								<td>
 								<a class="btn btn-warning btn-sm" href="update-user/${usr.id}" role="button">Update</a>

@@ -6,11 +6,11 @@
 <head>
 <%@include file="./fragments/head.jsp"%>
 </head>
-<body style="background-color: #E9ECEB;">
+<body style="background-color: #b8d1fa;">
 <%@include file="./fragments/bar_top.jsp"%>
 <div class="container m-2">
 	<div class="container-sm">
-		<div class="row" style="background-color: #FCFCFC;">
+		<div class="row" style="background-color: #ffecec;">
 			<div class="col-md-6 offset-md-3 pb-3">
 				<h4 class="text-center mb-3 mt-3 text-warning">Update User</h4>
 				<form action="${pageContext.request.contextPath}/handle-user" method="post">
@@ -29,8 +29,10 @@
 					</div>
 					<div>
 						<label for="email"><span style="font-size:12px;">Email</span></label>
-						<input type="text"	class="form-control" id="email" name="email"
-							placeholder="Email..." value="${user.email}">
+						<input type="email"	pattern="^([a-z0-9_.-]+)@([a-z0-9.-]+)\.([a-z]{2,4})$"
+						onkeyup="this.value = this.value.replace(/[^a-zA-Z0-9_.-]/g, '');"
+						class="form-control" id="email" name="email"
+							placeholder="name@mail.com" value="${user.email}">
 					</div>
 					<div class="container text-left"><br>
 						<a href="${pageContext.request.contextPath}/users" class="btn btn-outline-secondary btn-sm">Cancel</a>
@@ -42,6 +44,5 @@
 		</div>
 	</div>
 </div>
-
 </body>
 </html>
